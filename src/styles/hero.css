@@ -39,9 +39,30 @@
     padding: 1.5rem 4rem;
     font-size: 1.8rem;
     color: var(--color-blue);
-    border-radius: 1rem;
+    border-radius: 0.7rem;
     cursor: pointer;
+    box-shadow: 0.85rem 1rem 1.8rem 0 #33636C14;
 }
+
+.rating-hero{
+    width: 12rem;
+    height: auto;
+    aspect-ratio: 156/56;
+    position: absolute;
+    bottom: -25.5%;
+    right: 5.5%;
+}
+
+.arrow{
+    transform: scale(0.9);
+    aspect-ratio: 257/167;
+    position: absolute;
+    bottom: -42%;
+    left: 24.5%;
+}
+
+
+/* ------------------------------------ hero right part styling -------------------------->*/
 
 .hero-right {
     position: relative;
@@ -106,6 +127,42 @@
     left: 5%;
     top: 104%;
     transform: translateY(-104%);
+}
+
+.discount-parent{
+    width: 17.5rem;
+    height: 7.5rem;
+    border-radius: 0.7rem;
+    background: linear-gradient(144.76deg, rgba(166, 20, 115, 0.33) -0.67%, #FFFFFF 43.53%, rgba(5, 242, 242, 0.37) 88.65%);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    right: 1%;
+    bottom: -9%;
+}
+
+.discount-parent .discount{
+    width: 17.4rem;
+    height: 7.4rem;
+    background: #f0f8f9;
+    border-radius: 0.7rem;
+    padding: 1.5rem;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    gap: 0.5rem;
+}
+
+.discount h6{
+    font-size: 1.2rem;
+    text-transform: uppercase;
+    color: var(--color-blue);
+}
+.discount p{
+    font-size: 0.9rem;
+    line-height: 1.8rem;
+    color: #677DA8;
 }
 
 
