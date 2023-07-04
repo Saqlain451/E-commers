@@ -1,0 +1,114 @@
+.glassmorphism-hero {
+    width: 100%;
+    display: grid;
+    grid-template-columns: 48% 52%;
+    align-items: center;
+    justify-content: center;
+    padding-top: 3.8rem;
+    position: relative;
+    gap: 3.5rem;
+}
+
+.hero-left {
+    position: relative;
+}
+
+.hero-left h1 {
+    font-size: 4rem;
+    text-transform: uppercase;
+    color: var(--color-blue);
+}
+
+
+.hero-left h1 span {
+    text-decoration: underline;
+    text-decoration-thickness: 0.22rem;
+}
+
+.hero-left p {
+    font-size: 1.3rem;
+    margin-top: 5%;
+    color: #8491b4;
+    line-height: 3rem;
+}
+
+.hero-left button {
+    margin-top: 7%;
+    background: white;
+    border: none;
+    padding: 1.5rem 4rem;
+    font-size: 1.8rem;
+    color: var(--color-blue);
+    border-radius: 1rem;
+    cursor: pointer;
+}
+
+.hero-right {
+    position: relative;
+}
+
+.hero-right img:first-child {
+    width: 100%;
+    height: auto;
+    aspect-ratio: 613/613;
+    z-index: 2;
+}
+
+.hero-right img:nth-child(2) {
+    width: auto;
+    height: 50.6rem;
+    position: absolute;
+    top: 1.5%;
+    left: 47.5%;
+    transform: translateX(-47.5%);
+    aspect-ratio: 255/609;
+    z-index: 1;
+
+}
+
+.hero-right img:nth-child(3) {
+    position: absolute;
+    width: 52.5rem;
+    height: auto;
+    aspect-ratio: 645/146;
+    left: -1%;
+    top: 52%;
+    transform: translateY(-52%);
+    z-index: 1;
+}
+
+.hero-right .box {
+    width: 3.7rem;
+    height: 3.7rem;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    top: 58%;
+    left: 65%;
+    font-size: 2rem;
+    color: white;
+    z-index: 1;
+    background: linear-gradient(180deg, #E142AA 0%, #73FFFF 100%),
+    radial-gradient(51.56% 51.56% at 40.62% 29.69%, rgba(255, 255, 255, 0.19) 4.81%, rgba(255, 255, 255, 0) 100%);
+
+}
+
+.shadow {
+    width: 40rem;
+    height: 11rem;
+    opacity: 0.1;
+    background: linear-gradient(180deg, #000000 0%, rgba(0, 0, 0, 0) 100%);
+    border-radius: 50%;
+    z-index: 0;
+    position: absolute;
+    left: 5%;
+    top: 104%;
+    transform: translateY(-104%);
+}
+
+
+
+
+
