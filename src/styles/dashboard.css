@@ -14,9 +14,21 @@
     position: relative;
 }
 
+.dashboard-content main{
+    height: 117rem;
+    padding: 2rem;
+}
+
+.dashboard-content .main-content{
+    width: 100%;
+    background: white;
+    height: 117rem;
+    border-radius: 1rem;
+}
+
 .dashboard-content aside:last-child{
     border-left: 2px solid #EDEFF2;
-    height:100vh;
+    height:117rem;
 }
 
 .dot{

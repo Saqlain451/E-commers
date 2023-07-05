@@ -1,3 +1,8 @@
+import {BsFilter} from "react-icons/bs";
+import React from "react";
+import {AiOutlineSearch} from "react-icons/ai";
+import {MdDelete, MdModeEditOutline} from "react-icons/md";
+
 const popularProducts = [
     {
         id: 1,
@@ -33,5 +38,28 @@ const popularProducts = [
     }
 ]
 
+const headerIcons = [
+    {
+        id : 1,
+        icons : <BsFilter/>,
+        name : "Filtres"
+    },
+    {
+        id : 2,
+        icons : <AiOutlineSearch/>,
+        name : "Search"
+    },
+    {
+        id : 2,
+        icons : <MdModeEditOutline/>,
+        name : "Edit"
+    },
+    {
+        id : 4,
+        icons : <MdDelete/>,
+        name : "Delete"
+    },
+]
 
-export {popularProducts}
+
+export {popularProducts,headerIcons}
