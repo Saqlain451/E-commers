@@ -1,7 +1,7 @@
 .glassmorphism{
     background: var(--bg-gradient);
     width : 100%;
-    height: 131.9rem;
+    height: auto;
 }
 .navbar-center {
     margin-left: 11.16%;

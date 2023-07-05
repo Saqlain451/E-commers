@@ -1,0 +1,46 @@
+
+.dashboard-left {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    padding: 2.5rem 0;
+    height: 117rem;
+}
+
+.dashboard-left .dashboard-left-up, .dashboard-left .dashboard-down {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 1.5rem;
+}
+.dashboard-left-up{
+    display: block;
+    margin-bottom: auto;
+}
+
+
+.btn-messenger {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+}
+
+.dashboard-left .dashboard-down img {
+    width: 4.3rem;
+    height: 4.3rem;
+    border-radius: 50%;
+}
+
+.img-notification {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+}
+
+.img-notification .dot {
+    background: #3361FF;
+}
