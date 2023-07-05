@@ -14,6 +14,7 @@
     grid-gap: 2rem;
     align-items: center;
     justify-content: center;
+    padding: 5% 0;
 }
 
 .product-card-wrapper .product-card {
@@ -35,7 +36,27 @@
     margin: auto;
     transform: scale(0.99);
     border-radius: 1rem 1rem 0 0;
-    padding: 0.5rem 2rem;
+    padding: 0 2rem;
+    background: rgba(255, 255, 255, 0.8);
+    position: relative;
+}
+
+.product-img .btn-fav {
+    position: absolute;
+    width: 2.5rem;
+    height: 2.5rem;
+    background: linear-gradient(180deg, #E142AA 0%, #73FFFF 100%),
+    radial-gradient(51.56% 51.56% at 40.62% 29.69%, rgba(255, 255, 255, 0.19) 4.81%, rgba(255, 255, 255, 0) 100%) ;
+    border:none;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    font-size: 1.3rem;
+    top: 3%;
+    right: 3%;
+    cursor: pointer;
 }
 
 .product-img img {
@@ -43,41 +64,58 @@
     margin: 1rem auto;
     width: 100%;
     height: auto;
+    aspect-ratio: 1/1;
+    object-fit: contain;
 }
-.product-card-content{
+
+.product-card-content {
     padding: 2rem 1rem;
 }
-.product-card-content .product-reviews{
-    font-size: 1.05rem;
+
+.product-card-content .product-reviews {
+    font-size: 1rem;
+    display: flex;
+    align-items: center;
+    gap: 0.4rem;
 }
-.product-card-content h6{
+
+.product-reviews span {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.25rem;
+    color: #A61473;
+}
+
+.product-card-content h6 {
     font-size: 1.5rem;
     text-transform: capitalize;
     margin-top: 0.5rem;
 }
-.product-card-content .price{
+
+.product-card-content .price {
     display: flex;
     align-items: center;
     justify-content: space-between;
     margin-top: 0.8rem;
 }
 
-.price .price-left{
+.price .price-left {
     display: flex;
     align-items: center;
     gap: 1.5rem;
 }
 
-.price .price-left h2{
-  font-size: 1.47rem;
+.price .price-left h2 {
+    font-size: 1.47rem;
 }
 
-.price .price-left span{
+.price .price-left span {
     text-decoration-line: line-through;
     font-size: 1rem;
 }
 
-.price .price-right button{
+.price .price-right button {
     padding: 0.7rem 1rem;
     font-size: 1.2rem;
     color: var(--color-blue);
@@ -85,4 +123,5 @@
     border: none;
     background: white;
     cursor: pointer;
+    box-shadow: 0.18rem 1.1rem 1.8rem 0 #F2DDEB;
 }
