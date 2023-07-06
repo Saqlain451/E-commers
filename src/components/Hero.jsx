@@ -2,6 +2,7 @@
 import React from 'react';
 import "../styles/hero.css"
 import {AiFillStar} from 'react-icons/ai'
+import {NavLink} from "react-router-dom";
 
 const Hero = () => {
     return (
@@ -10,13 +11,17 @@ const Hero = () => {
             <div className="glassmorphism-hero">
                 <div className="hero-left">
                     <h1>Purchase your
-                        <span> shoes</span> now.</h1>
+                        <span> shoes</span> now.
+                    </h1>
                     <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Dolor morbi velit turpis et dolor
                         sit
-                        morbi odio id. Aliquam ultricies tortor ac.</p>
-                    <button>Shop Now</button>
+                        morbi odio id. Aliquam ultricies tortor ac.
+                    </p>
 
-                    <img src="/assets/rating-hero.png" alt="rating hero" width={156} height={56} className={"rating-hero"}/>
+                   <NavLink to={"/dashboard"}><button>Shop Now</button></NavLink>
+
+                    <img src="/assets/rating-hero.png" alt="rating hero" width={156} height={56}
+                         className={"rating-hero"}/>
                     <img src="/assets/arrow.png" alt="arrow" width={257} height={167} className={"arrow"}/>
                 </div>
 
@@ -30,10 +35,10 @@ const Hero = () => {
                     <div className="shadow"></div>
                     <div className="discount-parent">
                         <div className="discount">
-
                             <h6>Get Up to 30% Off</h6>
                             <p>You can get 30% off this product
-                                if you are buying now</p>
+                                if you are buying now
+                            </p>
                         </div>
                     </div>
                 </div>

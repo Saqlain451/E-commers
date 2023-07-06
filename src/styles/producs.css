@@ -2,6 +2,7 @@
     padding: 5.5% 0;
 }
 
+/* heading part----------------------------->*/
 .products h1 {
     font-size: 3.5rem;
     color: var(--color-blue);
@@ -46,8 +47,8 @@
     width: 2.5rem;
     height: 2.5rem;
     background: linear-gradient(180deg, #E142AA 0%, #73FFFF 100%),
-    radial-gradient(51.56% 51.56% at 40.62% 29.69%, rgba(255, 255, 255, 0.19) 4.81%, rgba(255, 255, 255, 0) 100%) ;
-    border:none;
+    radial-gradient(51.56% 51.56% at 40.62% 29.69%, rgba(255, 255, 255, 0.19) 4.81%, rgba(255, 255, 255, 0) 100%);
+    border: none;
     border-radius: 50%;
     display: flex;
     align-items: center;
@@ -124,4 +125,34 @@
     background: white;
     cursor: pointer;
     box-shadow: 0.18rem 1.1rem 1.8rem 0 #F2DDEB;
+}
+
+
+@media (800px < width <= 1024px) {
+
+    .products h1 {
+        font-size: 2.8rem;
+        padding-top: 3rem;
+    }
+
+    .products .product-card-wrapper {
+        grid-template-columns: repeat(3, 1fr);
+    }
+}
+
+@media (500px < width <= 800px) {
+    .products .product-card-wrapper {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (width <= 500px) {
+    .products h1 {
+        font-size: 2.5rem;
+        padding-top: 3rem;
+    }
+
+    .products .product-card-wrapper {
+        grid-template-columns: auto;
+    }
 }
