@@ -5,6 +5,7 @@ import DashContentHeader from "../components/DashContentHeader.jsx";
 import DashContentHeader2 from "../components/DashContentHeader2.jsx";
 import Card from "../components/Card.jsx";
 import {products} from "../hooks/Data.jsx";
+import DashRightSIdeBar from "../components/DashRightSIdeBar.jsx";
 
 const Dashboard = () => {
     return (
@@ -33,7 +34,7 @@ const Dashboard = () => {
                         </div>
                     </main>
                     <aside>
-
+                        <DashRightSIdeBar/>
                     </aside>
                 </div>
             </div>

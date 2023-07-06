@@ -1,0 +1,115 @@
+.dashRightSideBar {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    padding: 2.5rem 0;
+    height: 100%;
+}
+
+.dashboard-right-up{
+    display: block;
+    margin-bottom: auto;
+}
+
+/* ------ Upper part of the card part graph and and the text ------*/
+
+.dashRightSideBar .card-graph-upper {
+    padding: 2.5rem 1rem;
+    border-bottom: 2px solid #EDEFF2;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
+    height: auto;
+}
+
+.card-graph-left {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    gap: 2rem;
+}
+
+.card-graph-left p {
+    color: #6B7A99;
+    font-size: 1rem;
+    font-weight: 600;
+}
+
+.card-graph-left h6 {
+    color: #6B7A99;
+    font-size: 1.7rem;
+    font-weight: 600;
+}
+
+.card-graph-right img {
+    width: 100%;
+    height: auto;
+    aspect-ratio: 102/57;
+    object-fit: contain;
+}
+
+
+/* -----------------------------------------    end ----------------------------------*/
+
+.card-graph{
+    border: 2px solid #EDEFF2;
+    border-radius: 1rem;
+}
+
+.card-graph:nth-child(2), .card-graph:nth-child(3){
+    margin-top: 2rem;
+}
+
+/*-----------------------------Card down part ---------------------------> */
+
+.card-graph-down {
+    padding: 2rem 1rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+
+/* card down part for 1st card*/
+
+.card-graph .card-graph-down p {
+    font-size: 1rem;
+    color: #6B7A99;
+    font-weight: 600;
+}
+
+/* card down part for second card -----> */
+
+.card-graph:nth-child(2) button{
+    widht : 4.3rem;
+    padding: 0.5rem 1rem;
+    background: #8833FF1A;
+    color: #8833FF;
+    font-size: 1rem;
+    font-weight: 700;
+    border: none;
+    border-radius: .6rem;
+}
+/* card down part for 3rd card ------>*/
+.card-graph:nth-child(3) p{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
+}
+.card-graph:nth-child(3) p span{
+    width: 0.6rem;
+    height: 0.6rem;
+    border-radius: 50%;
+    background: #8833FF80;
+}
+.card-graph:nth-child(3) p:last-child span{
+    background: #FF663380;
+}
+
+
+
+
+
