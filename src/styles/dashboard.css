@@ -1,37 +1,37 @@
-.dashboard{
+.dashboard {
     width: 100%;
-    height: 127rem;
+    height: auto;
     background: var(--bg-light);
 }
-.dashboard-content{
+
+.dashboard-content {
     display: grid;
     grid-template-columns: 6.25% 73.12% 20.62%;
 }
 
-.dashboard-content aside:first-child{
+.dashboard-content aside:first-child {
     border-right: 2px solid #EDEFF2;
-    height:117rem;
+    height: auto;
     position: relative;
 }
 
-.dashboard-content main{
-    height: 117rem;
+.dashboard-content main {
+    height: auto;
     padding: 2rem;
 }
 
-.dashboard-content .main-content{
+.dashboard-content .main-content {
     width: 100%;
     background: white;
-    height: 117rem;
+    height: auto;
     border-radius: 1rem;
 }
 
-.dashboard-content aside:last-child{
+.dashboard-content aside:last-child {
     border-left: 2px solid #EDEFF2;
-    height:117rem;
 }
 
-.dot{
+.dot {
     width: 0.8rem;
     height: 0.8rem;
     box-shadow: 0 2px 10px 0 #26334D08;
@@ -57,3 +57,79 @@
     box-shadow: 0 2px 5px 0 #26334D08;
 }
 
+.main-content .main-content-products {
+    padding: 3.5rem;
+}
+
+.main-content-products .product-wrapper {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    align-items: center;
+    justify-content: center;
+    grid-gap: 1.5rem;
+}
+
+.main-content-products .product-wrapper .card {
+    width: 100%;
+    height: auto;
+    padding: 1rem;
+    background: #FAFBFC;
+}
+
+.product-wrapper .card .card-img {
+    display: flex;
+    height: auto;
+}
+
+.product-wrapper .card .card-img input {
+    height: 100%;
+}
+
+.product-wrapper .card .card-img img {
+    width: 100%;
+    height: auto;
+    aspect-ratio: 180/150;
+    object-fit: contain;
+}
+
+.product-wrapper .card .card-content {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 1.5rem;
+    padding-bottom: 1rem;
+}
+
+.product-wrapper .card .card-content p {
+    font-size: 1.1rem;
+    font-weight: 600;
+    color: #6B7A99;
+}
+
+.product-wrapper .card .card-content button {
+    width: 5rem;
+    height: 2.6rem;
+    background: white;
+    box-shadow: 0 2px 5px 0 #26334D08;
+    font-size: 0.9rem;
+    color: #7D8FB3;
+    border: none;
+    border-radius: 25px;
+    font-weight: 700;
+}
+
+.main-content-products .btn-load{
+    width: 9rem;
+    height: 3.7rem;
+    border: 2px solid #F5F6F7;
+    box-shadow: 0 2px 5px 0 #26334D08;
+    background: white;
+    color: #6B7A99;
+    font-size: 1rem;
+    border-radius: 25px;
+    font-weight: 600;
+    display: block;
+    margin: 1rem auto;
+    cursor: pointer;
+}

@@ -1,5 +1,5 @@
 import React from 'react';
-import {BsFillGrid3X2GapFill, BsFilter} from "react-icons/bs";
+import {BsFillGrid3X2GapFill} from "react-icons/bs";
 import {HiOutlineViewList} from "react-icons/hi";
 import {BiSolidCheckCircle} from "react-icons/bi";
 import {headerIcons} from "../hooks/Data.jsx";

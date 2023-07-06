@@ -41,6 +41,7 @@
     gap: 2.5rem;
     color: var(--color-gray-blue);
     font-size: 1.1rem;
+    font-weight: 700;
 }
 
 .dash-content-header .header-items span {
@@ -66,8 +67,10 @@
     border: 2px solid #8833FF;
     box-shadow: 0 10px 30px 0 #8833FF26;
     font-size: 1.1rem;
+    font-weight: 700;
     color: white;
     gap: 0.3rem;
+    cursor: pointer;
 }
 
 .dash-content-header .header-btns p span {
