@@ -1,23 +1,29 @@
-import React from 'react';
+import React, {useState} from 'react';
 import {GrSearch} from 'react-icons/gr'
 import {AiOutlineShoppingCart} from 'react-icons/ai'
 import "../styles/navbar.css"
+import {BsList} from "react-icons/bs";
+import {NavLink} from "react-router-dom";
 const Navbar = () => {
+    const [isShow, setIsShow] = useState(false);
+    const btnClickHandler = ()=>{
+        setIsShow(!isShow);
+    }
     return (
         <>
-            <div className="header">
+            <div className={isShow? "header show" : "header"}>
                 <div className="navbar-logo">
-                    <a href="">
+                    <NavLink to={"/"}>
                         <img src="/assets/logo%20icon.png" alt="logo" width={34.73} height={57.89}/>
                         <h1>BIZPUSH</h1>
-                    </a>
+                    </NavLink>
                 </div>
                 <nav className="navbar">
                     <ul className={"navbar-list"}>
-                        <li><a href="">Home</a></li>
-                        <li><a href="">Gallery</a></li>
-                        <li><a href="">Shop</a></li>
-                        <li><a href="">Contact</a></li>
+                        <li><NavLink to={"/"} onClick={btnClickHandler}>Home</NavLink></li>
+                        <li><NavLink to={"/"} onClick={btnClickHandler}>Gallery</NavLink></li>
+                        <li><NavLink to={"/"} onClick={btnClickHandler}>Shop</NavLink></li>
+                        <li><NavLink to={"/"} onClick={btnClickHandler}>Contact</NavLink></li>
                     </ul>
                 </nav>
 
@@ -27,6 +33,7 @@ const Navbar = () => {
                     <div className="profile">
                         <img src="/assets/profile.png" alt="profilepng" width={47} height={47}/>
                     </div>
+                    <span className={"bar"} onClick={btnClickHandler}><BsList/></span>
                 </div>
             </div>
 
