@@ -7,109 +7,63 @@
     height: 100%;
 }
 
-.dashboard-right-up{
+.dashboard-right-up {
     display: block;
     margin-bottom: auto;
 }
-
-/* ------ Upper part of the card part graph and and the text ------*/
-
-.dashRightSideBar .card-graph-upper {
-    padding: 2.5rem 1rem;
-    border-bottom: 2px solid #EDEFF2;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    gap: 1rem;
-    height: auto;
-}
-
-.card-graph-left {
-    display: flex;
-    flex-direction: column;
-    height: 100%;
-    gap: 2rem;
-}
-
-.card-graph-left p {
-    color: #6B7A99;
-    font-size: 1rem;
-    font-weight: 600;
-}
-
-.card-graph-left h6 {
-    color: #6B7A99;
-    font-size: 1.7rem;
-    font-weight: 600;
-}
-
-.card-graph-right img {
+.dashboard-right-down{
     width: 100%;
-    height: auto;
-    aspect-ratio: 102/57;
-    object-fit: contain;
+    padding: 2rem;
 }
 
-
-/* -----------------------------------------    end ----------------------------------*/
-
-.card-graph{
+.dashboard-right-down-card {
+    padding: 2rem;
     border: 2px solid #EDEFF2;
     border-radius: 1rem;
 }
 
-.card-graph:nth-child(2), .card-graph:nth-child(3){
+.dashboard-right-down-card .dashboard-right-down-upper {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.dashboard-right-down-card .dashboard-right-down-upper div{
+    display: flex;
+    align-items: center;
+    gap: 1.5rem;
+    color: #4D5E80;
+    font-size: 1.1rem;
+    font-weight: 600;
+}
+
+.dashboard-right-down-bottom{
+    width: 100%;
+    display: grid;
+    gap: 1.5rem;
     margin-top: 2rem;
 }
 
-/*-----------------------------Card down part ---------------------------> */
-
-.card-graph-down {
-    padding: 2rem 1rem;
+.dashboard-right-down-bottom div{
     display: flex;
     align-items: center;
     justify-content: space-between;
 }
 
-
-/* card down part for 1st card*/
-
-.card-graph .card-graph-down p {
-    font-size: 1rem;
-    color: #6B7A99;
-    font-weight: 600;
-}
-
-/* card down part for second card -----> */
-
-.card-graph:nth-child(2) button{
-    widht : 4.3rem;
-    padding: 0.5rem 1rem;
-    background: #8833FF1A;
-    color: #8833FF;
-    font-size: 1rem;
+.dashboard-right-down-bottom div button{
+   padding: 0.5rem 1.5rem;
+    background: transparent;
+    border: 2px solid #EDEFF2;
+    border-radius: 25px;
+    color: #7D8FB3;
+    font-size: 0.9rem;
     font-weight: 700;
-    border: none;
-    border-radius: .6rem;
 }
-/* card down part for 3rd card ------>*/
-.card-graph:nth-child(3) p{
-    display: flex;
-    align-items: center;
+
+.dashboard-right-down-bottom div p{
+    display:grid;
+    gap: 0.5rem;
+    color: #6B7A99;
+    font-size: 1rem;
     justify-content: center;
-    gap: 1rem;
 }
-.card-graph:nth-child(3) p span{
-    width: 0.6rem;
-    height: 0.6rem;
-    border-radius: 50%;
-    background: #8833FF80;
-}
-.card-graph:nth-child(3) p:last-child span{
-    background: #FF663380;
-}
-
-
-
-
-

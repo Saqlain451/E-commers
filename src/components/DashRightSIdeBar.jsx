@@ -1,38 +1,49 @@
 import React from 'react';
 import "../styles/dashRightSide.css"
 import DashgraphCard from "./DashgraphCard.jsx";
+import {delivaryData, graphCardData} from "../hooks/Data.jsx";
+import {BiDotsVerticalRounded} from "react-icons/bi";
 
 const DashRightSIdeBar = () => {
     return (
         <>
             <div className="dashRightSideBar">
                 <div className="dashboard-right-up">
-                    <div className="card-graph">
-                        <DashgraphCard text1="Total Sales" text2="$281.90" img="/assets/Chart.svg"/>
-                        <div className="card-graph-down">
-                            <p>6 total orders</p>
-                            <p>View report</p>
-                        </div>
-                    </div>
-                    <div className="card-graph">
-                        <DashgraphCard text1="Total Sessions" text2="456" img="/assets/Chart 2.svg"/>
-                        <div className="card-graph-down">
-                            <button>Live</button>
-                            <p>6 total orders</p>
-                            <p>View report</p>
-                        </div>
-                    </div>
-                    <div className="card-graph">
-                        <DashgraphCard text1="Customer rate" text2="5.43%" img="/assets/Chart 3.svg"/>
-                        <div className="card-graph-down">
-                            <p> <span></span> First Time</p>
-                            <p> <span></span> Returning</p>
-                        </div>
-                    </div>
+                    {graphCardData.map((ele, id) => {
+                        return (
+                            <DashgraphCard {...ele} key={id}/>
+                        )
+                    })}
+
                 </div>
 
                 <div className="dashboard-right-down">
+                    <div className="dashboard-right-down-card">
+                        <div className="dashboard-right-down-upper">
+                            <div>
+                                <p>Actions</p>
+                                <p>Orders</p>
+                            </div>
+                            <div>
+                                <BiDotsVerticalRounded/>
+                            </div>
+                        </div>
 
+                        <div className="dashboard-right-down-bottom">
+                            {delivaryData.map((ele) => {
+                                const {id, time, text1, text2} = ele;
+                                return (
+                                    <div key={id}>
+                                        <button>{time}</button>
+                                        <p>{text1}
+                                            <span>{text2}</span>
+                                        </p>
+                                    </div>
+                                )
+                            })}
+
+                        </div>
+                    </div>
                 </div>
 
             </div>
