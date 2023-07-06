@@ -49,8 +49,9 @@
     height: auto;
     aspect-ratio: 156/56;
     position: absolute;
-    bottom: -25.5%;
-    right: 5.5%;
+    bottom: -26.5%;
+    right: 13%;
+    transform: translate(26.5%,-13%);
     object-fit: contain;
 }
 /*  ------------------------ arrow image place --------------------->*/
@@ -58,8 +59,9 @@
     width: 45%;
     height: auto;
     position: absolute;
-    bottom: -36%;
-    left: 27.5%;
+    top: 127%;
+    left: 85%;
+    transform: translate(-127%,-85%);
     aspect-ratio: 257/167;
     object-fit: contain;
 }
@@ -110,8 +112,9 @@
     align-items: center;
     justify-content: center;
     position: absolute;
-    top: 58%;
-    left: 65%;
+    top: 63.5%;
+    left: 70%;
+    transform: translate(-63.5%,-70%);
     font-size: 2rem;
     color: white;
     z-index: 1;
@@ -194,6 +197,12 @@
         font-size: 0.5rem;
         line-height: normal;
     }
+    .rating-hero{
+        display: none;
+    }
+    .arrow{
+        display: none;
+    }
 }
 
 @media (width <= 500px) {
@@ -209,6 +218,12 @@
     .discount p{
         font-size: 0.5rem;
         line-height: normal;
+    }
+    .rating-hero{
+        display: none;
+    }
+    .arrow{
+        display: none;
     }
 }
 
