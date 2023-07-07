@@ -65,9 +65,10 @@
     .header .navbar{
         position: fixed;
         width: 100%;
-        height: 100vh;
+        height: 100%;
+        overflow: hidden;
         background: var(--bg-gradient);
-        z-index: 3;
+        z-index: 9;
         left: 0;
         top: 8rem;
         display: flex;
