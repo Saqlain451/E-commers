@@ -5,7 +5,10 @@
     display: flex;
     align-items: center;
     justify-content: space-between;
-    padding-top: 7%;
+    padding: 0 15% 0 11%;
+    position: sticky;
+    top: 0;
+    z-index: 999;
 }
 .header .navbar-logo a{
     display: flex;
@@ -62,6 +65,12 @@
 }
 
 @media (width<=800px) {
+    .empty-box{
+        height: 0rem;
+    }
+    .header{
+        padding: 2% 8% 2% 4%;
+    }
     .header .navbar{
         position: fixed;
         width: 100%;
@@ -70,7 +79,7 @@
         background: var(--bg-gradient);
         z-index: 9;
         left: 0;
-        top: 8rem;
+        top: 5.79rem;
         display: flex;
         align-items: center;
         justify-content: center;

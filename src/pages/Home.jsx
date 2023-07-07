@@ -7,9 +7,8 @@ const Home = () => {
     return (
         <>
             <div className="glassmorphism">
-                <div className={"navbar-center"}>
+                    <div className="empty-box"></div>
                     <Navbar/>
-                </div>
                 <div className="home-center">
                     <Hero/>
                     <Product/>
