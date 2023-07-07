@@ -15,7 +15,7 @@
     --color-blue: #677DA8;
     --color-dark: #4D4D4D;
     --bg-light: #F7F8FA;
-    --color-gray-blue : #C3CAD9;
+    --color-gray-blue: #C3CAD9;
 
 }
 
@@ -23,6 +23,11 @@ html {
     font-size: 62.5%;
     user-select: none;
     font-family: 'Gilroy', sans-serif;
+}
+
+body {
+    height: 100%;
+    overflow: hidden
 }
 
 
