@@ -181,3 +181,27 @@
     font-size: 1.1rem;
     font-weight: 700;
 }
+
+
+@media (width<=500px) {
+
+    .dash-content-header2{
+        padding: 0 1rem;
+    }
+    .header2-logo p{
+        display: none;
+    }
+    .header-2-items div button{
+        display: none;
+    }
+    .header-2-items div{
+        width: 3.2rem;
+        height: 3rem;
+        font-size: 1.5rem;
+    }
+    .dash-content-header2 .header-2-btns button{
+        width: 3.2rem;
+        height: 3rem;
+        font-size: 1.5rem;
+    }
+}

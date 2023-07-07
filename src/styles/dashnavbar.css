@@ -120,6 +120,8 @@
     display: none;
 }
 
+
+
 @media (width < 1100px) {
     .dashboard-navbar .navbar-logo {
         gap: 1rem;

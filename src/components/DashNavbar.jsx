@@ -6,7 +6,6 @@ import {IoIosNotifications} from 'react-icons/io'
 import {MdCancel} from 'react-icons/md'
 import "../styles/dashnavbar.css"
 import {useState} from "react";
-import {BsList} from "react-icons/bs";
 
 const DashNavbar = () => {
     const [isActive, setIsActive] = useState(false);
@@ -16,8 +15,11 @@ const DashNavbar = () => {
     return (<>
         <div className={isActive ? "dashboard-navbar active" : "dashboard-navbar"}>
             <div className="navbar-logo">
-                <button className={"circle btn-bar-dash"} onClick={btnClickHandler}>{isActive? <MdCancel/> : <HiBars3/>}</button>
-                <button className={"circle"} onClick={()=>{setIsActive(true)}}><HiBars3/></button>
+                <button className={"circle btn-bar-dash"} onClick={btnClickHandler}>{isActive ? <MdCancel/> :
+                    <HiBars3/>}</button>
+                <button className={"circle"} onClick={() => {
+                    setIsActive(true)
+                }}><HiBars3/></button>
                 <a href="">
                     <h1>Constructor</h1>
                 </a>
@@ -52,7 +54,9 @@ const DashNavbar = () => {
                         <span className={"dot"}></span>
                         <button className={"circle"}><IoIosNotifications/></button>
                     </div>
-                    <button className={"circle cancel-icon-dash"} onClick={()=>{setIsActive(false)}}><MdCancel/></button>
+                    <button className={"circle cancel-icon-dash"} onClick={() => {
+                        setIsActive(false)
+                    }}><MdCancel/></button>
                 </div>
             </div>
 
