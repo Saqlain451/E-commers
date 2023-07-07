@@ -29,7 +29,7 @@ const DashContentHeader = () => {
                     <span className={isBtnActive.Assembly? "active" : ""} onClick={btnClickHandler}>Assembly</span>
                 </div>
                 <div className="header-btns">
-                    <p><span><IoAddCircleSharp/></span>Add Product</p>
+                    <p><span><IoAddCircleSharp/></span> Add <span>Product</span></p>
                 </div>
             </div>
         </>

@@ -73,13 +73,14 @@
     cursor: pointer;
 }
 
-.dash-content-header .header-btns p span {
+.dash-content-header .header-btns p span:first-child {
     color: #FFFFFF80;
     font-size: 2rem;
     display: flex;
     align-items: center;
     justify-content: center;
 }
+
 
 
 /* -------------------------  header 2 ---------------------------*/
@@ -184,7 +185,28 @@
 
 
 @media (width<=500px) {
+    .dash-content-header{
+        padding: 0 1rem;
+    }
+    .header-logo .header-logo-img{
+        display: none;
+    }
+    .header-logo h1{
+        font-size: 1.1rem;
+    }
+    .dash-content-header .header-btns p{
+        width: 7.3rem;
+        height: 3rem;
+        font-size: 0.8rem;
+    }
+    .dash-content-header .header-btns p span:last-child{
+        display: none;
+    }
+    .dash-content-header .header-btns p span:first-child{
+        font-size: 1.5rem;
+    }
 
+    /*------ Header2 responsive part ------->*/
     .dash-content-header2{
         padding: 0 1rem;
     }
