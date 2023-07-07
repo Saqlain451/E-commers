@@ -11,6 +11,9 @@ I used React JS and web design skills to make the online store. I followed the d
 ## Deployment
 To view and interact with the prototype, I deployed the website on Vercel to ensure accessibility. The deployed version of the website can be accessed at [here](https://e-commerce-tech-test.vercel.app/) .
 
+## Video Demonstration
+To better showcase the app's functionality and visual design, I have prepared a video demonstration. You can view the video on [Loom](https://www.loom.com/share/3bd5c6f09ba446c9863053166ef55b71?sid=915cc3f2-2584-4925-9b6a-963e009a1e68)
+
 ## Demo 
 
 Here are some screenshots showcasing the user interface of the e-commerce website:
