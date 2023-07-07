@@ -8,7 +8,7 @@ const DashContentHeader2 = () => {
         <>
             <div className="dash-content-header2">
                 <div className="header2-logo">
-                    <button><BiSolidCheckCircle/></button>
+                    <button aria-label={"select all checkbox"}><BiSolidCheckCircle/></button>
                     <p>Select All</p>
                 </div>
                 <div className="header-2-items">
@@ -17,15 +17,15 @@ const DashContentHeader2 = () => {
                         return(
                             <div key={id}>
                                 <span>{icons}</span>
-                                <button>{name}</button>
+                                <button aria-label={"name"}>{name}</button>
                             </div>
                         )
                     })}
 
                 </div>
                 <div className="header-2-btns">
-                    <button><HiOutlineViewList/></button>
-                    <button><BsFillGrid3X2GapFill/></button>
+                    <button aria-label={"list view of products"}><HiOutlineViewList/></button>
+                    <button aria-label={"grid view of products"}><BsFillGrid3X2GapFill/></button>
                 </div>
             </div>
         </>

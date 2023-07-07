@@ -16,7 +16,7 @@ const Card = ({image, name, price}) => {
                 </div>
                 <div className="card-content">
                     <p>{name}</p>
-                    <button>{price}</button>
+                    <button aria-label={"show price"}>{price}</button>
                 </div>
             </div>
         </>

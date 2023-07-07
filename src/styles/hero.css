@@ -21,8 +21,7 @@
 
 
 .hero-left h1 span {
-    text-decoration: underline;
-    text-decoration-thickness: 0.22rem;
+  border-bottom: 0.23rem solid var(--color-blue);
 }
 
 .hero-left p {

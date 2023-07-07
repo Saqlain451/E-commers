@@ -10,19 +10,19 @@ const DashLeftSideBar = () => {
         <>
             <div className="dashboard-left">
                 <div className="dashboard-left-up">
-                    <button className={"circle"}><FaCompass/></button>
-                    <button className={"circle"}><AiFillStar/></button>
+                    <button className={"circle"} aria-label={"compass"}><FaCompass/></button>
+                    <button className={"circle"} aria-label={"star"}><AiFillStar/></button>
                     <div className="btn-messenger">
                         <span className="dot"></span>
-                        <button className={"circle"}><FaFacebookMessenger/></button>
+                        <button className={"circle"} aria-label={"Messenger"}><FaFacebookMessenger/></button>
                     </div>
-                    <button className={"circle"}><FaArrowTrendUp/></button>
-                    <button className={"circle"}><IoEarthSharp/></button>
-                    <button className={"circle"}><BsBuildingsFill/></button>
+                    <button className={"circle"} aria-label={"arrow up"}><FaArrowTrendUp/></button>
+                    <button className={"circle"} aria-label={"earth icon"}><IoEarthSharp/></button>
+                    <button className={"circle"} aria-label={"building"}><BsBuildingsFill/></button>
                 </div>
 
                 <div className="dashboard-down">
-                    <button className={"circle"}><AiOutlinePlus/></button>
+                    <button className={"circle"} aria-label={"add item"}><AiOutlinePlus/></button>
                     <div className="img-notification">
                         <span className="dot"></span>
                         <img src="/assets/sidebar-left-img1.png" alt="avatar1" width={50} height={50}/>

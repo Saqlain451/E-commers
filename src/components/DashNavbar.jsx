@@ -16,9 +16,10 @@ const DashNavbar = () => {
     return (<>
         <div className={isActive ? "dashboard-navbar active" : "dashboard-navbar"}>
             <div className="navbar-logo">
-                <button className={"circle btn-bar-dash"} onClick={btnClickHandler}>{isActive ? <MdCancel/> :
+                <button className={"circle btn-bar-dash"} onClick={btnClickHandler}
+                        aria-label={"click to get menus for mobile devices"}>{isActive ? <MdCancel/> :
                     <HiBars3/>}</button>
-                <button className={"circle"} onClick={() => {
+                <button aria-label={"3bar icon"} className={"circle"} onClick={() => {
                     setIsActive(true)
                 }}><HiBars3/></button>
                 <NavLink to={"/"}>
@@ -32,7 +33,7 @@ const DashNavbar = () => {
                     <li><NavLink to={"/"}>News</NavLink></li>
                     <li><NavLink to={"/"}>User Policy</NavLink></li>
                     <li><NavLink to={"/"}>Contacts</NavLink></li>
-                    <li><NavLink to={"/"}> <PiDotsThreeBold/></NavLink></li>
+                    <li><NavLink to={"/"} aria-label={"more"}><PiDotsThreeBold/></NavLink></li>
                 </ul>
             </nav>
 
@@ -44,7 +45,7 @@ const DashNavbar = () => {
 
             <div className="nav-icons">
                 <span className={"circle-search"}>
-                    <button className={"circle"}><BiSearch/></button>
+                    <button className={"circle"} aria-label={"search"}><BiSearch/></button>
                 </span>
                 <div className="user">
                     <span><IoPersonCircle/></span>
@@ -53,11 +54,11 @@ const DashNavbar = () => {
                 <div className="navbar-btns">
                     <div className="notification-icons">
                         <span className={"dot"}></span>
-                        <button className={"circle"}><IoIosNotifications/></button>
+                        <button className={"circle"} aria-label={"notification check"}><IoIosNotifications/></button>
                     </div>
                     <button className={"circle cancel-icon-dash"} onClick={() => {
                         setIsActive(false)
-                    }}><MdCancel/></button>
+                    }} aria-label={"close the menus of mobile devices"}><MdCancel/></button>
                 </div>
             </div>
 

@@ -8,6 +8,7 @@ import {products} from "../hooks/Data.jsx";
 import DashRightSIdeBar from "../components/DashRightSIdeBar.jsx";
 
 const Dashboard = () => {
+    document.title="Shopping Page"
     return (
         <>
             <div className="dashboard">
@@ -29,7 +30,9 @@ const Dashboard = () => {
                                         )
                                     })}
                                 </div>
-                                <button className={"btn-load"}>Load More</button>
+                                <button className={"btn-load"} aria-label={"load more click to get more product"}>Load
+                                    More
+                                </button>
                             </div>
                         </div>
                     </main>

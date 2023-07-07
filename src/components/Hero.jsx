@@ -10,8 +10,7 @@ const Hero = () => {
 
             <div className="glassmorphism-hero">
                 <div className="hero-left">
-                    <h1>Purchase your
-                        <span> shoes</span> now.
+                    <h1>Purchase your <span>shoes</span> now.
                     </h1>
                     <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Dolor morbi velit turpis et dolor
                         sit

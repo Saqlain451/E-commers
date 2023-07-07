@@ -50,7 +50,7 @@ const headerIcons = [
         name: "Search"
     },
     {
-        id: 2,
+        id: 3,
         icons: <MdModeEditOutline/>,
         name: "Edit"
     },

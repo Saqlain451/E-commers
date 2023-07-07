@@ -76,7 +76,7 @@
 /* card down part for second card -----> */
 
 .card-graph:nth-child(2) button {
-    widht: 4.3rem;
+    width: 4.3rem;
     padding: 0.5rem 1rem;
     background: #8833FF1A;
     color: #8833FF;
