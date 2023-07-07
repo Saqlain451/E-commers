@@ -6,6 +6,7 @@ import {IoIosNotifications} from 'react-icons/io'
 import {MdCancel} from 'react-icons/md'
 import "../styles/dashnavbar.css"
 import {useState} from "react";
+import {NavLink} from "react-router-dom";
 
 const DashNavbar = () => {
     const [isActive, setIsActive] = useState(false);
@@ -20,18 +21,18 @@ const DashNavbar = () => {
                 <button className={"circle"} onClick={() => {
                     setIsActive(true)
                 }}><HiBars3/></button>
-                <a href="">
+                <NavLink to={"/"}>
                     <h1>Constructor</h1>
-                </a>
+                </NavLink>
             </div>
             <nav className="navbar">
                 <ul className="navbar-list">
-                    <li><a href="">Dashboard</a></li>
-                    <li><a href="">About Us</a></li>
-                    <li><a href="">News</a></li>
-                    <li><a href="">User Policy</a></li>
-                    <li><a href="">Contacts</a></li>
-                    <li><a href=""> <PiDotsThreeBold/></a></li>
+                    <li><NavLink to={"/"}>Dashboard</NavLink></li>
+                    <li><NavLink to={"/"}>About Us</NavLink></li>
+                    <li><NavLink to={"/"}>News</NavLink></li>
+                    <li><NavLink to={"/"}>User Policy</NavLink></li>
+                    <li><NavLink to={"/"}>Contacts</NavLink></li>
+                    <li><NavLink to={"/"}> <PiDotsThreeBold/></NavLink></li>
                 </ul>
             </nav>
 

@@ -81,6 +81,9 @@
     justify-content: center;
 }
 
+.header-mobile-items {
+    display: none;
+}
 
 
 /* -------------------------  header 2 ---------------------------*/
@@ -163,12 +166,13 @@
     font-size: 2rem;
     color: #C3CAD9;
 }
-.header-2-items div:last-child{
+
+.header-2-items div:last-child {
 
     border-color: #F5F6F7;
 }
 
-.header-2-items div span{
+.header-2-items div span {
     display: flex;
     align-items: center;
     justify-content: center;
@@ -184,44 +188,89 @@
 }
 
 
-@media (width<=500px) {
-    .dash-content-header{
+@media (width <= 500px) {
+    .dash-content-header {
         padding: 0 1rem;
     }
-    .header-logo .header-logo-img{
+
+    .header-logo .header-logo-img {
         display: none;
     }
-    .header-logo h1{
-        font-size: 1.1rem;
+
+    .header-logo h1 {
+        font-size: 1.4rem;
     }
-    .dash-content-header .header-btns p{
+
+    .dash-content-header .header-btns p {
         width: 7.3rem;
         height: 3rem;
         font-size: 0.8rem;
     }
-    .dash-content-header .header-btns p span:last-child{
+
+    .dash-content-header .header-btns p span:last-child {
         display: none;
     }
-    .dash-content-header .header-btns p span:first-child{
+
+    .dash-content-header .header-btns p span:first-child {
         font-size: 1.5rem;
     }
 
+    .header-mobile-items {
+        display: block;
+
+    }
+
+    .dash-content-header .header-btns {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 1rem;
+    }
+
+    .header-mobile-items select {
+        width: 8.2rem;
+        height: 3.1rem;
+        box-shadow: 0 2px 5px 0 #26334D08 !important;
+        border: 2px solid #F5F6F7;
+        outline: none;
+        background: white;
+        border-radius: 25px;
+        color: #6B7A99;
+        font-weight: 700;
+        font-size: 1rem;
+        padding: 0.5rem;
+    }
+
+    .header-mobile-items select option {
+
+        color: #7D8FB3;
+
+    }
+
+    .dash-content-header .header-items {
+        display: none;
+    }
+
     /*------ Header2 responsive part ------->*/
-    .dash-content-header2{
+    .dash-content-header2 {
         padding: 0 1rem;
     }
-    .header2-logo p{
+
+    .header2-logo p {
         display: none;
     }
-    .header-2-items div button{
+
+    .header-2-items div button {
         display: none;
     }
-    .header-2-items div{
+
+    .header-2-items div {
         width: 3.2rem;
         height: 3rem;
         font-size: 1.5rem;
     }
-    .dash-content-header2 .header-2-btns button{
+
+    .dash-content-header2 .header-2-btns button {
         width: 3.2rem;
         height: 3rem;
         font-size: 1.5rem;
