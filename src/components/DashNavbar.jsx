@@ -16,8 +16,9 @@ const DashNavbar = () => {
     return (<>
         <div className={isActive ? "dashboard-navbar active" : "dashboard-navbar"}>
             <div className="navbar-logo">
+                <button className={"circle btn-bar-dash"} onClick={btnClickHandler}>{isActive? <MdCancel/> : <HiBars3/>}</button>
+                <button className={"circle"} onClick={()=>{setIsActive(true)}}><HiBars3/></button>
                 <a href="">
-                    <button className={"circle"}><HiBars3/></button>
                     <h1>Constructor</h1>
                 </a>
             </div>
@@ -51,10 +52,7 @@ const DashNavbar = () => {
                         <span className={"dot"}></span>
                         <button className={"circle"}><IoIosNotifications/></button>
                     </div>
-                    <button className={"circle cancel-icon-dash"}><MdCancel/></button>
-                    <button className={"circle bar-icon-dash"} onClick={btnClickHandler}>{isActive ? <MdCancel/> :
-                        <BsList/>}
-                    </button>
+                    <button className={"circle cancel-icon-dash"} onClick={()=>{setIsActive(false)}}><MdCancel/></button>
                 </div>
             </div>
 

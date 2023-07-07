@@ -155,3 +155,27 @@
     margin: 1rem auto;
     cursor: pointer;
 }
+
+@media (width<=1200px) {
+    .dashboard-content{
+        grid-template-columns: 100%;
+    }
+    .dashboard-content aside{
+        display: none;
+    }
+    .main-content-products .product-wrapper{
+        grid-template-columns: repeat(3,1fr);
+    }
+}
+
+@media (width<=768px){
+    .main-content-products .product-wrapper{
+        grid-template-columns: repeat(2,1fr);
+    }
+}
+
+@media (width<=500px) {
+    .main-content-products .product-wrapper{
+        grid-template-columns: repeat(1,1fr);
+    }
+}
