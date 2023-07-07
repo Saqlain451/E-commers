@@ -5,10 +5,16 @@ import {IoPersonCircle} from 'react-icons/io5'
 import {IoIosNotifications} from 'react-icons/io'
 import {MdCancel} from 'react-icons/md'
 import "../styles/dashnavbar.css"
+import {useState} from "react";
+import {BsList} from "react-icons/bs";
 
 const DashNavbar = () => {
+    const [isActive, setIsActive] = useState(false);
+    const btnClickHandler = () => {
+        setIsActive(!isActive);
+    }
     return (<>
-        <div className="dashboard-navbar">
+        <div className={isActive ? "dashboard-navbar active" : "dashboard-navbar"}>
             <div className="navbar-logo">
                 <a href="">
                     <button className={"circle"}><HiBars3/></button>
@@ -45,8 +51,10 @@ const DashNavbar = () => {
                         <span className={"dot"}></span>
                         <button className={"circle"}><IoIosNotifications/></button>
                     </div>
-
-                    <button className={"circle"}><MdCancel/></button>
+                    <button className={"circle cancel-icon-dash"}><MdCancel/></button>
+                    <button className={"circle bar-icon-dash"} onClick={btnClickHandler}>{isActive ? <MdCancel/> :
+                        <BsList/>}
+                    </button>
                 </div>
             </div>
 

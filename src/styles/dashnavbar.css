@@ -116,12 +116,17 @@
     display: none;
 }
 
+.bar-icon-dash {
+    display: none;
+}
+
 @media (width < 900px) {
     .dashboard-navbar .navbar-logo a {
         gap: 1rem;
 
     }
-    .dashboard-navbar .navbar-list{
+
+    .dashboard-navbar .navbar-list {
         gap: 1rem;
         font-size: 1rem;
     }
@@ -130,7 +135,8 @@
         display: none;
 
     }
-    .dashboard-navbar .nav-icons{
+
+    .dashboard-navbar .nav-icons {
         gap: 1rem;
     }
 
@@ -142,7 +148,7 @@
         height: 3.5rem !important;
     }
 
-    .dashboard-navbar .nav-icons .navbar-btns{
+    .dashboard-navbar .nav-icons .navbar-btns {
         gap: .5rem;
     }
 
@@ -154,3 +160,43 @@
 }
 
 
+@media (width <= 768px) {
+    .dashboard-navbar .navbar {
+        width: 100%;
+        height: 100vh;
+        position: fixed;
+        left: 0;
+        right: 0;
+        background: white;
+        top: 7.87rem;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        transform: translateY(-100%);
+        opacity: 0;
+        visibility: hidden;
+        transition: all 0.4s linear;
+    }
+
+    .dashboard-navbar .navbar .navbar-list {
+        flex-direction: column;
+        gap: 2rem;
+        font-size: 1.5rem;
+    }
+
+    .bar-icon-dash {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        cursor: pointer;
+    }
+
+    .cancel-icon-dash {
+        display: none;
+    }
+    .active .navbar {
+        transform: translateY(0%);
+        opacity: 1;
+        visibility: visible;
+    }
+}
